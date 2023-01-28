@@ -1,0 +1,14 @@
+cwd=$(pwd)
+lista=""
+for file in $(ls $cwd) 
+do
+  if [ -d ${cwd}/${file} ]
+  then
+   lista=${lista}${file}/,
+  else
+   lista=${lista}${file},
+  fi
+done
+echo $lista
+
+

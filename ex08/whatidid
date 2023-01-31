@@ -1,0 +1,32 @@
+  509  touch #hola#
+  510  touch "#hola#"
+  511  ls
+  512  mkdir hola
+  513  touch hola/hola~
+  514  tree
+  515  touch
+  516  touch hola/hola
+  517  tree
+  518  find -name hola
+  519  find -name "*~"
+  520  find -name "#*#"
+  521  find -name "#*#" "*~"
+  522  find -name "#*#" -name  "*~"
+  523  find -name "#*#" || -name "*~"
+  524  find -name "#*# *~"
+  525  find -name "#*# ||  *~"
+  526  find -name {"#*#","*~"}
+  527  find -name {#*#,*~}
+  528  find -name {\#*\#,*~}
+  529  find -name {\#*\#,*\~}
+  530  find -name ["","#"]*["#","~"]
+  531  find -name ["","#"]*["~","#"]
+  532  man find
+  533  find -name "['',#]*[~,#]"
+  534  man find
+  535  find -name "*~"
+  536  find -name "*~" -exec rm
+  537  execexit
+  538  history
+  539  history | tail -32
+  540  history | tail -32 > whatidid

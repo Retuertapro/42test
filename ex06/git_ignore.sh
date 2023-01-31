@@ -1,3 +1,2 @@
-current=$(dirname $0)
-
-cat ${current}/../.gitignore
+cd ..
+git ls-files --exclude-standard --ignored --others
